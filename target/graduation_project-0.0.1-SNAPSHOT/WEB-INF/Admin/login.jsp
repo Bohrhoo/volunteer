@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <base href="${pageContext.request.contextPath }/">
-<title>携志同行</title>
+<title>志愿者管理平台</title>
 <link rel="shortcout icon" href="<%=request.getContextPath()%>/backimg/11.ico.jpg" />
 <!-- 新 Bootstrap 核心 CSS 文件 -->
 <link
@@ -81,7 +81,7 @@ body {
 			$("p").text($(".errorMessage").text());
 			$(".errorMessage").remove();
 		} else { 
-			$("p").text("欢迎登陆\"携志同行\"志愿者管理平台");
+			$("p").text("欢迎登陆志愿者管理平台");
 		}
 		$(document).ready(function() {
 			$("#login").click(function () {
@@ -100,7 +100,7 @@ body {
 
 			$("input").on("focus", function() {
 				$(".errorMessage").remove();
-				$("p").text("欢迎登陆\"携志同行\"志愿者管理平台");
+				$("p").text("欢迎登陆志愿者管理平台");
 			});
 		});
 	</script>

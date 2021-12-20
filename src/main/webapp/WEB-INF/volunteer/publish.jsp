@@ -81,7 +81,6 @@ pageEncoding="UTF-8"%>
         height:540px;
         margin:0 auto;
         text-align:center;
-        background:#f1f1f1;
     }
     p{
         padding:8% 0 3% 0;
@@ -120,9 +119,9 @@ pageEncoding="UTF-8"%>
 <body>
 <form action="<%=request.getContextPath()%>/volunteer/savePublish" method="post" onsubmit="return checkPublish();">
     <div class="document">
-        <div class="header">
+<%--        <div class="header">
             <img src="<%=request.getContextPath()%>/volunteer/img/timg.jpg">
-        </div>
+        </div>--%>
         <div class="nav">
             <ul>
                 <a href="<%=request.getContextPath()%>/volunteer/index"><li>网页首页</li></a>&nbsp;&nbsp;|
@@ -141,9 +140,9 @@ pageEncoding="UTF-8"%>
             <input class="submit" type="submit" value="提交"/>
             <input class="none" type="button" value="清空"/>
         </div>
-        <div class="footer">
+<%--        <div class="footer">
             <img src="<%=request.getContextPath()%>/volunteer/img/bottom.png">
-        </div>
+        </div>--%>
     </div>
 </form>
 </body>

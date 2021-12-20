@@ -76,12 +76,22 @@ pageEncoding="UTF-8"%>
         list-style:none;
     }
     .login{
-        width:350px;
-        height:250px;
-        border:3px solid #999;
-        margin:12% auto;
-        border-radius:8px;
-        background:#f1f1f1;
+        /*width:350px;*/
+        /*height:250px;*/
+        /*border:3px solid #999;*/
+        /*margin:12% auto;*/
+        /*border-radius:8px;*/
+        /*background:#f1f1f1;*/
+
+
+        margin:15% auto;
+        width:420px;
+        height:350px;
+
+        border: 1px solid gray;
+        border-radius: 10px;
+        background-color: white;
+        opacity: 0.6;
     }
     .input{
         width:100%;
@@ -113,11 +123,16 @@ pageEncoding="UTF-8"%>
         border:0;
         border-radius:5px;
     }
+    .top-text{
+        color: #a94442;
+        text-align: center;
+        margin-top: 60px;
+    }
 </style>
 <body>
 <form action="<%=request.getContextPath()%>/volunteer/volunteerCheckLogin" method="post" onsubmit="return check();">
     <div class="document">
-        <div class="nav">
+<%--        <div class="nav">
             <ul>
                 <a href="<%=request.getContextPath()%>/volunteer/index"><li>网页首页</li></a>&nbsp;&nbsp;|
                 <a href="<%=request.getContextPath()%>/volunteer/presenceList"><li>风采展览</li></a>&nbsp;&nbsp;|
@@ -127,9 +142,10 @@ pageEncoding="UTF-8"%>
             <div class="navtext">
                 <a href="<%=request.getContextPath()%>/volunteer/login"><li>登录/注册</li></a>
             </div>
-        </div>
+        </div>--%>
         <div class="login">
-            <div class="input" style="margin-top:80px;"><label>账号：</label><input class="text" type="text" name="account"/></div>
+            <p class="top-text" >欢迎登陆志愿者服务平台</p>
+            <div class="input" style="margin-top:50px;"><label>账号：</label><input class="text" type="text" name="account"/></div>
             <div class="input"><label>密码：</label><input class="password" type="password" name="password"/></div>
             <div class="button">
                 <input type="button" value="注册" id="loginmessage">

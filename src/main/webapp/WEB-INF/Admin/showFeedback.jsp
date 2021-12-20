@@ -85,6 +85,6 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
-<script src="/graduation_project/js/myFeedback.js"></script>
+<script src="${pageContext.request.contextPath}/js/myFeedback.js"></script>
 </body>
 </html>

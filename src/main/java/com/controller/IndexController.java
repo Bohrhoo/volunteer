@@ -67,7 +67,7 @@ public class IndexController {
     public ModelAndView getPresenceList(ModelAndView modelAndView){
         List<Presence> presenceList = presenceService.getPresenceList();
         modelAndView.addObject("presenceList",presenceList);
-        modelAndView.setViewName("/volunteer/show");
+        modelAndView.setViewName("/volunteer/presenceList");
         return modelAndView;
     }
 

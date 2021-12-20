@@ -35,7 +35,7 @@
 	margin-left: -50px;
 }
 </style>
-<title>携志同行</title>
+<title>志愿者管理平台</title>
 <link rel="shortcout icon" href="<%=request.getContextPath()%>/backimg/11.ico.jpg" />
 </head>
 <body>
@@ -49,7 +49,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">携志同行</a>
+			<a class="navbar-brand" href="#">志愿者管理平台</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">

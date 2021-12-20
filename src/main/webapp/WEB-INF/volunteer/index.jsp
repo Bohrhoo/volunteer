@@ -116,14 +116,17 @@ pageEncoding="UTF-8"%>
         height:100%;
         display:block;
     }
+    .top-title{
+        text-align: center;
+    }
 </style>
 
 <body>
 <form action="<%=request.getContextPath()%>/volunteer/noticeInfo" method="post" id="formId" lass="form-horizontal" role="form">
     <div class="document">
-        <div class="header">
+<%--        <div class="header">
             <img src="<%=request.getContextPath()%>/volunteer/img/timg.jpg">
-        </div>
+        </div>--%>
         <div class="nav">
             <ul>
                 <a href="<%=request.getContextPath()%>/volunteer/index"><li>网页首页</li></a>&nbsp;&nbsp;|
@@ -136,7 +139,9 @@ pageEncoding="UTF-8"%>
             </div>
         </div>
         <div class="content">
-            <div class="noticetitle"><span>公告</span>通知</div>
+            <div class="noticetitle">
+                <h2 class="top-title">公告通知</h2>
+            </div>
             <div class="notice">
                 <ul>
                 <c:forEach items="${noticeList}" var= "notice"  varStatus="status">
@@ -147,9 +152,9 @@ pageEncoding="UTF-8"%>
                 </ul>
             </div>
         </div>
-        <div class="footer">
+<%--        <div class="footer">
             <img src="<%=request.getContextPath()%>/volunteer/img/bottom.png">
-        </div>
+        </div>--%>
     </div>
 </form>
 </body>

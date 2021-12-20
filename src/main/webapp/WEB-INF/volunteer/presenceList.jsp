@@ -126,14 +126,17 @@
         height:100%;
         display:block;
     }
+    .top-title{
+        text-align: center;
+    }
 </style>
 
 <body>
 <form action="<%=request.getContextPath()%>/feedbackInfo" method="post" id="formId" lass="form-horizontal" role="form">
     <div class="document">
-        <div class="header">
+<%--        <div class="header">
             <img src="<%=request.getContextPath()%>/volunteer/img/timg.jpg">
-        </div>
+        </div>--%>
         <div class="nav">
             <ul>
                 <a href="<%=request.getContextPath()%>/volunteer/index"><li>网页首页</li></a>&nbsp;&nbsp;|
@@ -146,7 +149,9 @@
             </div>
         </div>
        <div class="content">
-            <div class="noticetitle"><span>风采</span>展览</div>
+            <div class="noticetitle">
+                <h2 class="top-title">风采展览</h2>
+            </div>
             <div class="notice">
                 <ul>
                     <c:forEach items="${presenceList}" var= "presence"  varStatus="status">
@@ -157,9 +162,9 @@
                 </ul>
             </div>
         </div>
-        <div class="footer">
+<%--        <div class="footer">
             <img src="<%=request.getContextPath()%>/volunteer/img/bottom.png">
-        </div>
+        </div>--%>
     </div>
 </form>
 </body>

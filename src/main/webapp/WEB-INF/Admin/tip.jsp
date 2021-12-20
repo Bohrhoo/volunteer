@@ -22,6 +22,6 @@ body {
 </style>
 </head>
 <body>
-	<h2 class="text-center" style="margin-top:100px;">${user.userName },欢迎进入“携志同行”志愿者管理平台</h2>
+	<h2 class="text-center" style="margin-top:100px;">${user.userName },欢迎进入志愿者管理平台</h2>
 </body>
 </html>

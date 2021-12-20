@@ -107,13 +107,17 @@ pageEncoding="UTF-8"%>
         height:100%;
         display:block;
     }
+    .top-title{
+        text-align: center;
+        margin-top: 20px;
+    }
 </style>
 
 <body>
     <div class="document">
-        <div class="header">
+<%--        <div class="header">
             <img src="<%=request.getContextPath()%>/volunteer/img/timg.jpg">
-        </div>
+        </div>--%>
         <div class="nav">
             <ul>
                 <a href="<%=request.getContextPath()%>/volunteer/index"><li>网页首页</li></a>&nbsp;&nbsp;|
@@ -125,9 +129,7 @@ pageEncoding="UTF-8"%>
                 <a href="<%=request.getContextPath()%>/volunteer/login" id="loginOrRegister"><li>登录/注册</li></a>
             </div>
         </div>
-        <div style="width:1000px;height:40px;margin:0 auto;background:#f1f1f1;">
-            <p style="margin-left:20px;line-height:40px;">欢迎参加志愿者服务平台的活动</p>
-        </div>
+            <h2 class="top-title">欢迎参加志愿者服务平台的活动</h2>
         <div class="content" style="text-align:center;">
             <c:forEach items="${activitys}" var= "activity"  varStatus="status">
                 <a href="<%=request.getContextPath()%>/volunteer/joining?activityId=${activity.activityid}">
@@ -140,9 +142,9 @@ pageEncoding="UTF-8"%>
                 </a>
             </c:forEach>
         </div>
-        <div class="footer">
+<%--        <div class="footer">
             <img src="<%=request.getContextPath()%>/volunteer/img/bottom.png">
-        </div>
+        </div>--%>
     </div>
 </body>
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
